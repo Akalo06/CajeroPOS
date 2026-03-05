@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOS\\CajeroPOS\\CajeroPOS.csproj": {}
+    "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOS\\CajeroPOS\\CajeroPOS.csproj": {
+    "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOS\\CajeroPOS\\CajeroPOS.csproj",
+        "projectUniqueName": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj",
         "projectName": "CajeroPOS",
-        "projectPath": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOS\\CajeroPOS\\CajeroPOS.csproj",
+        "projectPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj",
         "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOS\\CajeroPOS\\obj\\",
+        "outputPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "System.Speech": {
               "target": "Package",
-              "version": "[10.0.2, )"
+              "version": "[10.0.3, )"
             }
           },
           "imports": [

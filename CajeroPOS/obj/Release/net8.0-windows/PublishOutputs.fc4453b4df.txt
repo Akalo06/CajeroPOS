@@ -1,0 +1,7 @@
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\CajeroPOS.exe
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\CajeroPOS.deps.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\CajeroPOS.runtimeconfig.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\CajeroPOS.pdb
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\System.Speech.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Release\net8.0-windows\publish\runtimes\win\lib\net8.0\System.Speech.dll

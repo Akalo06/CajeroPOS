@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
-      "System.Speech/10.0.2": {
+      "System.Speech/10.0.3": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Speech.dll": {
@@ -27,10 +27,10 @@
     }
   },
   "libraries": {
-    "System.Speech/10.0.2": {
-      "sha512": "1L83iIN6QdoEbDQl6vT6pLVDPSoYhv38xbh2RKUYtt4RGtzfy38W4+J8vhaD/I76N5R7RWkJ5V7TgGrLingWNQ==",
+    "System.Speech/10.0.3": {
+      "sha512": "1n6Sn16yLtonZSK7tGzKiGnanuCs38kiE0EIbssNoC6+S8Bx2iih0jNcvU9KxNeRYwMQYXlQUVAUhrkYS+CSHQ==",
       "type": "package",
-      "path": "system.speech/10.0.2",
+      "path": "system.speech/10.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -54,7 +54,7 @@
         "runtimes/win/lib/net8.0/System.Speech.xml",
         "runtimes/win/lib/net9.0/System.Speech.dll",
         "runtimes/win/lib/net9.0/System.Speech.xml",
-        "system.speech.10.0.2.nupkg.sha512",
+        "system.speech.10.0.3.nupkg.sha512",
         "system.speech.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -62,7 +62,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "System.Speech >= 10.0.2"
+      "System.Speech >= 10.0.3"
     ]
   },
   "packageFolders": {
@@ -72,11 +72,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOC\\CajeroPOS\\CajeroPOC.csproj",
-      "projectName": "CajeroPOC",
-      "projectPath": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOC\\CajeroPOS\\CajeroPOC.csproj",
+      "projectUniqueName": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj",
+      "projectName": "CajeroPOS",
+      "projectPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj",
       "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOC\\CajeroPOS\\obj\\",
+      "outputPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,7 +117,7 @@
         "dependencies": {
           "System.Speech": {
             "target": "Package",
-            "version": "[10.0.2, )"
+            "version": "[10.0.3, )"
           }
         },
         "imports": [

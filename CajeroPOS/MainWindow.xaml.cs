@@ -149,8 +149,29 @@ namespace CajeroPOS
             contadorPedidos++;
             ActualizarPantallas();
 
-            string valor = Interaction.InputBox("Ingrese el importe recibido:", "Importe Recibido", "");
-            decimal importe = Convert.ToDecimal(valor);
+
+
+            decimal importe = 0;
+            bool importeValido = false;
+
+            while (!importeValido)
+            {
+                string valor = Interaction.InputBox("Ingrese el importe recibido:", "Importe Recibido", "");
+
+                if (!decimal.TryParse(valor, out importe))
+                {
+                    MessageBox.Show("Debe ingresar un número válido.");
+                    continue;
+                }
+
+                if (importe < total)
+                {
+                    MessageBox.Show("Importe insuficiente");
+                    continue;
+                }
+
+                importeValido = true;
+            }
 
             Factura factura = new Factura
             {
@@ -192,13 +213,16 @@ namespace CajeroPOS
 
         private void ImprimirTicketTermico(object sender, RoutedEventArgs e)
         {
-            PrintDialog pd = new PrintDialog();
+            ticketTermico.Visibility = Visibility.Visible; // asegurarnos que está visible
+            ticketTermico.UpdateLayout(); // fuerza el layout de todos los hijos
+            ticketTermico.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+            ticketTermico.Arrange(new Rect(ticketTermico.DesiredSize));
 
+            PrintDialog pd = new PrintDialog();
             if (pd.ShowDialog() == true)
             {
-                ticketTermico.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-                ticketTermico.Arrange(new Rect(ticketTermico.DesiredSize));
-                pd.PrintVisual(ticketTermico, "Ticket térmico");
+                DateTime horaLocal = DateTime.Now;
+                pd.PrintVisual(ticketTermico, "Ticket " + horaLocal.ToString("dd-MM-yyyy-HH-mm-ss"));
             }
         }
 
@@ -237,7 +261,7 @@ namespace CajeroPOS
                 {
                     PromptBuilder builder1 = new PromptBuilder();
                     builder1.StartVoice("Microsoft Pablo Desktop");
-                    builder1.AppendText("Pedido " + p.Numero + " Listo");
+                    builder1.AppendText("El Pedido número " + p.Numero + " esta Listo");
                     builder1.EndVoice();
 
                     synth.SpeakAsync(builder1);

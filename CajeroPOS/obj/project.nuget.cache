@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AdIO49J4flI=",
+  "dgSpecHash": "PXP5telM4kU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\corre\\source\\repos\\2025-2026\\Acceso a Datos\\CajeroPOC\\CajeroPOS\\CajeroPOC.csproj",
+  "projectFilePath": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOC\\CajeroPOS\\CajeroPOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\corre\\.nuget\\packages\\system.speech\\10.0.2\\system.speech.10.0.2.nupkg.sha512"
+    "C:\\Users\\corre\\.nuget\\packages\\system.speech\\10.0.3\\system.speech.10.0.3.nupkg.sha512"
   ],
   "logs": []
 }

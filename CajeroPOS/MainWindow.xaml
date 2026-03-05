@@ -6,8 +6,6 @@
 
     <Grid Margin="10">
 
-
-
         <Label x:Name="lblHora"
             FontSize="18"
             FontWeight="Bold"
@@ -25,29 +23,49 @@
 
                     <!-- Panel productos -->
                     <StackPanel Margin="10,10,10,0" VerticalAlignment="Top" Height="297">
+
                         <TextBlock Text="Productos"
-                           FontSize="28"
-                           FontWeight="Bold"
-                           Foreground="#FF333333"
-                           Margin="0,0,0,20"/>
+        FontSize="28"
+        FontWeight="Bold"
+        Foreground="#FF333333"
+        Margin="0,0,0,20"/>
 
-                        <Button Content="🍔 Big Mac - 5,99€"
-                        Height="70"
-                        Margin="0,5"
-                        FontSize="20"
-                        Click="BigMac_Click"/>
+                        <Button Height="70" Margin="0,5" Click="BigMac_Click">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Image Source="imagenes/burguer.jpg"
+                   Width="50"
+                   Height="50"
+                   Margin="5"/>
+                                <TextBlock Text="Big Mac - 5,99€"
+                       FontSize="20"
+                       VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
 
-                        <Button Content="🍟 Patatas - 2,50€"
-                        Height="70"
-                        Margin="0,5"
-                        FontSize="20"
-                        Click="Patatas_Click"/>
+                        <Button Height="70" Margin="0,5" Click="Patatas_Click">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Image Source="imagenes/patatas.jpg"
+                   Width="50"
+                   Height="50"
+                   Margin="5"/>
+                                <TextBlock Text="Patatas - 2,50€"
+                       FontSize="20"
+                       VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
 
-                        <Button Content="🥤 Bebida - 1,99€"
-                        Height="70"
-                        Margin="0,5"
-                        FontSize="20"
-                        Click="Bebida_Click"/>
+                        <Button Height="70" Margin="0,5" Click="Bebida_Click">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Image Source="imagenes/bebida.png"
+                   Width="50"
+                   Height="50"
+                   Margin="5"/>
+                                <TextBlock Text="Bebida - 1,99€"
+                       FontSize="20"
+                       VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
                     </StackPanel>
                     <ScrollViewer Grid.Column="1">
                         <!-- Panel pedido y control -->
@@ -180,19 +198,15 @@
 
 
 
-
-
-
-
             </TabItem>
 
             <TabItem Header="facturas">
 
                 <Border x:Name="ticketTermico"
-        Width="280"
-        Background="White"
-        Padding="10"
-        Visibility="Visible">
+                    Width="280"
+                    Background="White"
+                    Padding="10"
+                    Visibility="Visible">
 
                     <StackPanel>
 
@@ -268,11 +282,11 @@
                             </Grid.ColumnDefinitions>
 
                             <TextBlock Text="RECIBIDO"
-               FontSize="10"/>
+                                FontSize="10"/>
 
                             <TextBlock x:Name="tkRecibido"
-               Grid.Column="1"
-               FontSize="10"/>
+                            Grid.Column="1"
+                            FontSize="10"/>
                         </Grid>
 
                         <!-- Cambio -->

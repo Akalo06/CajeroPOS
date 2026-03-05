@@ -1,0 +1,7 @@
+C:\Users\corre\Downloads\CajeroPOC.exe
+C:\Users\corre\Downloads\CajeroPOC.dll
+C:\Users\corre\Downloads\CajeroPOC.deps.json
+C:\Users\corre\Downloads\CajeroPOC.runtimeconfig.json
+C:\Users\corre\Downloads\CajeroPOC.pdb
+C:\Users\corre\Downloads\System.Speech.dll
+C:\Users\corre\Downloads\runtimes\win\lib\net8.0\System.Speech.dll

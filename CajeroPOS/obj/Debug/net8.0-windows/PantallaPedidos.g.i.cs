@@ -68,7 +68,7 @@ namespace CajeroPOS {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CajeroPOC;component/pantallapedidos.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CajeroPOS;component/pantallapedidos.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PantallaPedidos.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
