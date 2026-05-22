@@ -155,16 +155,16 @@ Desarrollar un TPV moderno, funcional y escalable aplicando conocimientos de:
 
 _Añadir aquí imágenes del programa_
 
-## Login
+## Cajero
 ![Login](Capturas/cajero.png)
 
-## Dashboard
+## Ticket
 ![Dashboard](Capturas/Ticket.png)
 
-## Gestión de productos
+## Gestión de ventas
 ![Productos](Capturas/ventas.png)
 
-## Ticket térmico
+## Gestión de ventas
 ![Ticket](capturas/productos.png)
 ---
 
