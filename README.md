@@ -1,4 +1,4 @@
-```md
+
 # CajeroPOS - Sistema TPV para Restaurantes
 
 ## Descripción del proyecto
@@ -178,4 +178,4 @@ Proyecto desarrollado por:
 # Licencia
 
 Proyecto educativo desarrollado con fines académicos.
-```
+
