@@ -1,0 +1,26 @@
+[
+  {
+    "Nombre": "Hamburguesa",
+    "Precio": 4.99,
+    "Categoria": "Burguers",
+    "Imagen": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\bin\\Debug\\net8.0-windows\\imagenes\\54acf525-eaaf-48ff-8396-8c79e35a608b.jpg"
+  },
+  {
+    "Nombre": "Patatas",
+    "Precio": 2.00,
+    "Categoria": "Complementos",
+    "Imagen": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\bin\\Debug\\net8.0-windows\\imagenes\\96f3bd80-e08d-4a8c-828f-f74b6033ad70.jpg"
+  },
+  {
+    "Nombre": "Cocacola",
+    "Precio": 3.00,
+    "Categoria": "Bebida",
+    "Imagen": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\bin\\Debug\\net8.0-windows\\imagenes\\6acabd69-2719-416c-a307-8d8b5e836e43.png"
+  },
+  {
+    "Nombre": "Helado",
+    "Precio": 1.00,
+    "Categoria": "Postre",
+    "Imagen": ""
+  }
+]

@@ -1,0 +1,94 @@
+﻿<Window x:Class="CajeroPOS.ImporteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CajeroPOS"
+        mc:Ignorable="d"
+        Title="Cobro"
+        Height="420"
+        Width="350"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{DynamicResource BgBrush}" Icon="/frente-de-la-tienda.ico">
+
+    <Border Padding="20">
+
+        <StackPanel>
+
+            <!-- TITULO -->
+            <TextBlock Text="Importe recibido"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="0,0,0,20"
+                       Foreground="{DynamicResource TextBrush}"/>
+
+            <!-- TOTAL -->
+            <TextBlock x:Name="txtTotal"
+                       Text="Total: 0 €"
+                       FontSize="18"
+                       Margin="0,0,0,10"
+                       Foreground="{DynamicResource TextBrush}"/>
+
+            <!-- INPUT -->
+            <TextBox x:Name="txtImporte"
+                     Height="45"
+                     FontSize="22"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Margin="0,0,0,20"/>
+
+            <!-- BOTONES RAPIDOS -->
+            <WrapPanel HorizontalAlignment="Center"
+                       Margin="0,0,0,20">
+
+                <Button Content="5€"
+                        Width="70"
+                        Height="45"
+                        Margin="5"
+                        Click="DineroRapido_Click" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource TextBrush}"/>
+
+                <Button Content="10€"
+                        Width="70"
+                        Height="45"
+                        Margin="5"
+                        Click="DineroRapido_Click" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource TextBrush}"/>
+
+                <Button Content="20€"
+                        Width="70"
+                        Height="45"
+                        Margin="5"
+                        Click="DineroRapido_Click" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource TextBrush}"/>
+
+                <Button Content="50€"
+                        Width="70"
+                        Height="45"
+                        Margin="5"
+                        Click="DineroRapido_Click" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource TextBrush}"/>
+
+            </WrapPanel>
+
+            <!-- BOTONES -->
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+
+                <Button Content="Cancelar"
+                        Width="110"
+                        Height="40"
+                        Margin="0,0,10,0"
+                        Click="Cancelar_Click"/>
+
+                <Button Content="Aceptar"
+                        Width="110"
+                        Height="40"
+                        Background="#28A745"
+                        Foreground="White"
+                        Click="Aceptar_Click"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Border>
+
+</Window>

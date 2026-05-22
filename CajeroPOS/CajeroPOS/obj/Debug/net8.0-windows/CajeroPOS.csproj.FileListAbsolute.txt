@@ -1,0 +1,183 @@
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS_MarkupCompile.cache
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.g.resources
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.AssemblyInfoInputs.cache
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.AssemblyInfo.cs
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.CoreCompileInputs.cache
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.exe
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.deps.json
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.runtimeconfig.json
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.dll
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.pdb
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.dll
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\refint\CajeroPOS.dll
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.pdb
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.genruntimeconfig.cache
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\ref\CajeroPOS.dll
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\PantallaPedidos.baml
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\PantallaPedidos.g.cs
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Speech.dll
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.AssemblyReference.cache
+C:\Users\corre\source\repos\2025-2026\Acceso a Datos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.Up2Date
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.exe
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.deps.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.runtimeconfig.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.pdb
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\System.Speech.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.AssemblyReference.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\PantallaPedidos.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\PantallaPedidos.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS_MarkupCompile.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.g.resources
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.AssemblyInfoInputs.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.AssemblyInfo.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.CoreCompileInputs.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.Up2Date
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\refint\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.pdb
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.genruntimeconfig.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOC\CajeroPOS\obj\Debug\net8.0-windows\ref\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.exe
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.deps.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.runtimeconfig.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.pdb
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Speech.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.AssemblyReference.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\PantallaPedidos.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\PantallaPedidos.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS_MarkupCompile.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.g.resources
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.AssemblyInfoInputs.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.AssemblyInfo.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.CoreCompileInputs.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.csproj.Up2Date
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\refint\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.pdb
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.genruntimeconfig.cache
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\ref\CajeroPOS.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS.sourcelink.json
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\Temas\Blue.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\Temas\Dark.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\Temas\Green.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\Temas\Light.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\Temas\Orange.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\Temas\Purple.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS_MarkupCompile.lref
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\App.baml
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\CajeroPOS.dll.config
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Humanizer.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\App.config
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\mysql.exe
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\bin\Debug\net8.0-windows\mysqldump.exe
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\CajeroPOS_Content.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\ImporteWindow.g.cs
+C:\Users\corre\OneDrive\Escritorio\2 DAM\proyectos\CajeroPOS\CajeroPOS\obj\Debug\net8.0-windows\ImporteWindow.baml

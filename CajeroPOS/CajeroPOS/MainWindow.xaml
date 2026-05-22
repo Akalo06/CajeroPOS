@@ -1,0 +1,1220 @@
+﻿<Window x:Class="CajeroPOS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cajero TVP/POS" Height="764" Width="1500" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource BgBrush}"  SizeChanged="Window_SizeChanged" Icon="/frente-de-la-tienda.ico">
+
+    <Grid Margin="10,10,10,16">
+
+        <Label x:Name="lblHora"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Margin="0,0,0,0" Foreground="{DynamicResource TextBrush}"/>
+        <TabControl Background="{DynamicResource BgBrush}"  Margin="10">
+            <TabItem Header="Cajero">
+
+                <Grid Margin="10">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- ===================== -->
+                    <!-- IZQUIERDA: PRODUCTOS -->
+                    <!-- ===================== -->
+                    <Grid Grid.Column="0">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <!-- buscador -->
+                            <RowDefinition Height="Auto"/>
+                            <!-- categorías -->
+                            <RowDefinition Height="*"/>
+                            <!-- productos -->
+                        </Grid.RowDefinitions>
+
+                        <!-- BUSCADOR -->
+                        <TextBox x:Name="txtBuscar"
+             Grid.Row="0"
+             Height="25"
+             Margin="10"
+             TextChanged="TxtBuscar_TextChanged"/>
+
+                        <!-- CATEGORÍAS -->
+                        <ScrollViewer Grid.Row="1"
+                  HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Disabled"
+                  Margin="10">
+
+                            <StackPanel x:Name="PanelCategorias"
+                    Orientation="Horizontal"/>
+                        </ScrollViewer>
+
+                        <!-- PRODUCTOS -->
+                        <ScrollViewer Grid.Row="2"
+              VerticalScrollBarVisibility="Auto"
+              VerticalContentAlignment="Top">
+
+                            <UniformGrid x:Name="PanelProductos"
+                 Margin="10"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"/>
+
+                        </ScrollViewer>
+
+                    </Grid>
+
+                    <!-- ===================== -->
+                    <!-- DERECHA: PEDIDOS -->
+                    <!-- ===================== -->
+                    <ScrollViewer Grid.Column="1">
+
+                        <StackPanel Margin="15">
+
+                            <!-- ===================== -->
+                            <!-- TÍTULO -->
+                            <!-- ===================== -->
+                            <TextBlock Text="Pedido actual"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="0,0,0,15"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                            <!-- ===================== -->
+                            <!-- PEDIDO ACTUAL -->
+                            <!-- ===================== -->
+                            <Border Background="{DynamicResource PanelBrush}"
+                CornerRadius="12"
+                Padding="10"
+                Margin="0,0,0,10">
+
+                                <ListBox x:Name="lstPedido"  MouseDoubleClick="LstPedido_MouseDoubleClick"
+                     Height="150"
+                     FontSize="15"
+                     Background="Transparent" Foreground="{DynamicResource TextBrush}"
+                     BorderThickness="0"/>
+                            </Border>
+
+                            <!-- TOTAL -->
+                            <Border Background="{DynamicResource PanelBrush}"
+                CornerRadius="10"
+                Padding="10"
+                Margin="0,0,0,10">
+
+                                <TextBlock x:Name="txtTotal"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="{DynamicResource TextBrush}"/>
+                            </Border>
+
+                            <!-- BOTÓN CONFIRMAR -->
+                            <Button Content="Confirmar pedido"
+                Height="42"
+                Background="{DynamicResource AccentBrush}"
+                Foreground="White"
+                FontSize="16"
+                FontWeight="SemiBold"
+                Margin="0,0,0,15"
+                                    Click="Confirmar_Click"/>
+
+                            <Separator Margin="5"/>
+
+                            <!-- ===================== -->
+                            <!-- EN PREPARACIÓN -->
+                            <!-- ===================== -->
+                            <TextBlock Text="Pedidos en preparación"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="0,10,0,8"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                            <Border Background="{DynamicResource PanelBrush}"
+                CornerRadius="12"
+                Padding="8"
+                Margin="0,0,0,10">
+
+                                <ListBox x:Name="lstPedidosPreparacion"
+                     Height="100"
+                     Background="Transparent" Foreground="{DynamicResource TextBrush}"
+                     BorderThickness="0"/>
+                            </Border>
+
+                            <!-- BOTÓN LISTO -->
+                            <Button Content="Marcar como LISTO"
+                                  FontWeight="SemiBold"  FontSize="16"
+                Height="38"
+                Margin="0,0,0,15"
+                Background="{DynamicResource AccentBrush}"
+                Foreground="White" Click="MarcarListo_Click"/>
+
+                            <!-- ===================== -->
+                            <!-- LISTOS -->
+                            <!-- ===================== -->
+                            <TextBlock Text="Pedidos listos"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="0,10,0,8"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                            <Border Background="{DynamicResource PanelBrush}"
+                CornerRadius="12"
+                Padding="8"
+                Margin="0,0,0,10">
+
+                                <ListBox x:Name="lstPedidosListos"
+                     Height="100"
+                     Background="Transparent" Foreground="{DynamicResource TextBrush}"
+                     BorderThickness="0"/>
+                            </Border>
+
+                            <!-- BOTÓN ELIMINAR -->
+                            <Button Content="Eliminar"
+                Height="38"         FontWeight="SemiBold" FontSize="16"
+                Background="#D9534F"
+                Foreground="White"
+                Margin="0,5,0,0" Click="Eliminar_Click"/>
+
+                        </StackPanel>
+
+                    </ScrollViewer>
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Gestion de usuarios">
+
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox Header="Datos del Usuario" Margin="0,0,0,10" Foreground="{DynamicResource TextBrush}">
+                        <StackPanel Margin="10">
+                            <Label Content="Nombre" Foreground="{DynamicResource TextBrush}"/>
+                            <TextBox x:Name="txtNombreUsuario"/>
+
+                            <Label Content="Contraseña" Foreground="{DynamicResource TextBrush}"/>
+                            <PasswordBox x:Name="txtConstraseña"/>
+
+                            <Label Content="Rol" Foreground="{DynamicResource TextBrush}"/>
+                            <ComboBox x:Name="cmbRol">
+                                <ComboBoxItem Content="Administrador"/>
+                                <ComboBoxItem Content="Cajero"/>
+                            </ComboBox>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                <Button Background="{DynamicResource AccentBrush}" Foreground="White"  Content="Agregar" Width="80" Margin="5" Click="agregarUsuarios"/>
+                                <Button Background="{DynamicResource AccentBrush}" Foreground="White" Content="Modificar" Width="80" Margin="5" Click="modificarUsuario"/>
+                                <Button Background="{DynamicResource AccentBrush}" Foreground="White" Content="Eliminar" Width="80" Margin="5" Click="eliminarUsuario"/>
+
+                                <Label x:Name="lblUsuario"
+                                        Content=""
+                                        FontSize="16"
+                                        FontWeight="Bold" Foreground="{DynamicResource TextBrush}"
+                                        />
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <DataGrid Grid.Row="1"
+                  x:Name="dgUsuarios"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionChanged="dgUsuarios_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="2*"/>
+
+                            <DataGridTextColumn Header="Rol" Binding="{Binding Rol}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+
+
+
+            </TabItem>
+
+            <TabItem Header="facturas">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <!-- 🧾 TICKET -->
+                    <Border x:Name="ticketTermico"
+            Width="280"
+            Background="White"
+            Padding="10"
+            Margin="10">
+
+                        <StackPanel>
+
+                            <!-- Empresa -->
+                            <TextBlock x:Name="tkEmpresa"
+                   
+                   FontSize="16"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+
+                            <TextBlock x:Name="tkDireccion"
+                   
+                   FontSize="10"
+                   HorizontalAlignment="Center"/>
+
+                            <TextBlock x:Name="tkCIF"
+                   
+                   FontSize="10"
+                   HorizontalAlignment="Center"/>
+
+                            <Separator Margin="5"/>
+
+                            <TextBlock x:Name="tkNumero" FontSize="10"/>
+                            <TextBlock x:Name="tkFecha" FontSize="10"/>
+                            <TextBlock x:Name="tkUsuario" FontSize="10"/>
+
+                            <Separator Margin="5"/>
+
+                            <ItemsControl x:Name="tkProductos">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="0,2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="25"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="60"/>
+                                                <ColumnDefinition Width="60"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Text="{Binding Cantidad}" FontSize="10"/>
+
+                                            <TextBlock Text="{Binding Nombre}"
+                           Grid.Column="1"
+                           FontSize="10"/>
+
+                                            <TextBlock Text="{Binding Precio, StringFormat={}{0:0.00} €}"
+                           Grid.Column="2"
+                           FontSize="10"
+                           HorizontalAlignment="Right"/>
+
+                                            <TextBlock Text="{Binding PrecioTotal, StringFormat={}{0:0.00} €}"
+                           Grid.Column="3"
+                           FontSize="10"
+                           HorizontalAlignment="Right"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+                            <Separator Margin="5"/>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="TOTAL" FontWeight="Bold" FontSize="12"/>
+                                <TextBlock x:Name="tkTotal" Grid.Column="1" FontWeight="Bold" FontSize="12"/>
+                            </Grid>
+
+                            <Grid Margin="0,3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="RECIBIDO" FontSize="10"/>
+                                <TextBlock x:Name="tkRecibido" Grid.Column="1" FontSize="10"/>
+                            </Grid>
+
+                            <Grid Margin="0,3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="CAMBIO" FontSize="10"/>
+                                <TextBlock x:Name="tkCambio" Grid.Column="1" FontSize="10"/>
+                            </Grid>
+
+                            <Separator Margin="5"/>
+
+                            <TextBlock x:Name="tkGracias"
+                   Text="Gracias por su compra"
+                   FontSize="10"
+                   HorizontalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ⚙️ PANEL CONFIG -->
+                    <Border Grid.Column="1" Background="White" Margin="10" Padding="15" CornerRadius="10">
+
+                        <StackPanel>
+
+                            <TextBlock Text="Configuración Ticket"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Empresa"/>
+                            <TextBox x:Name="txtEmpresa"/>
+
+                            <TextBlock Text="Dirección"/>
+                            <TextBox x:Name="txtDireccion"/>
+
+                            <TextBlock Text="CIF"/>
+                            <TextBox x:Name="txtCIF"/>
+
+                            <Separator Margin="10"/>
+
+                            <Button Content="Aplicar cambios"
+                        Height="35"
+                        Margin="0,15,0,0"
+                        Background="{DynamicResource AccentBrush}"
+                        Foreground="White"
+                        Click="AplicarCambiosTicket_Click"/>
+
+
+
+                        </StackPanel>
+
+                    </Border>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Productos">
+
+                <Grid Margin="15">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.2*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Background="White"
+                Padding="15"
+                CornerRadius="10"
+                Margin="0,0,10,0">
+
+                        <StackPanel>
+
+                            <TextBlock Text="Gestión de Productos"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Nombre"/>
+                            <TextBox x:Name="txtNombreProducto"
+                         Height="30"
+                         Margin="0,5,0,10"/>
+
+                            <TextBlock Text="Precio"/>
+                            <TextBox x:Name="txtPrecioProducto"
+                         Height="30"
+                         Margin="0,5,0,10"/>
+
+                            <TextBlock Text="Categoría"/>
+                            <ComboBox x:Name="cmbCategorias"
+                          Height="30"
+                          Margin="0,5,0,10"/>
+
+                            <Button Content="Seleccionar Imagen" Background="{DynamicResource AccentBrush}" Foreground="White"
+                       Click="SeleccionarImagen_Click"
+                        Height="35"
+                        Margin="0,5,0,15"/>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                                <Button Content="Agregar"
+                            Width="90"
+                            Click="AgregarProducto_Click"
+                            Background="#28A745"
+                            Foreground="White"/>
+
+                                <Button Content="Modificar"
+                            Width="90"
+                            Click="ModificarProducto_Click"
+                            Background="#FFC107"/>
+
+                                <Button Content="Eliminar"
+                            Width="90"
+                            Click="EliminarProducto_Click"
+                            Background="#DC3545"
+                            Foreground="White"/>
+
+                            </StackPanel>
+
+                            <Separator Margin="10"/>
+
+                            <TextBlock Text="Categorías"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Margin="0,10"/>
+
+                            <TextBlock Text="Nueva categoría"/>
+                            <TextBox x:Name="txtNuevaCategoria"
+                         Height="30"
+                         Margin="0,5,0,10"/>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                                <Button Content="Agregar"
+                            Width="100"
+                            Click="AgregarCategoria_Click"
+                            Background="#007BFF"
+                            Foreground="White"/>
+
+                                <Button Content="Eliminar"
+                            Width="100"
+                           Click="EliminarCategoria_Click"
+                            Background="#DC3545"
+                            Foreground="White"/>
+
+                            </StackPanel>
+
+                            <ListBox x:Name="lstCategorias"
+                         Height="120"
+                         Margin="0,10"/>
+
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="1"
+                Background="White"
+                Padding="15"
+                CornerRadius="10">
+
+                        <StackPanel>
+
+                            <TextBlock Text="Productos"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"/>
+
+                            <TextBlock Text="Buscar"/>
+                            <TextBox x:Name="txtBuscarProducto"
+                         Height="35"
+                         Margin="0,5,0,10" TextChanged="TxtBuscarProducto_TextChanged"
+                         />
+
+                            <TextBlock Text="Filtros"
+                           FontWeight="Bold"
+                           Margin="0,5" />
+
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,10">
+
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="Categoría"/>
+                                    <ComboBox x:Name="cmbFiltroCategoria" SelectionChanged="CmbFiltroCategoria_SelectionChanged"
+                                  Width="150"
+                                 />
+                                </StackPanel>
+
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="Precio mínimo"/>
+                                    <TextBox x:Name="txtPrecioMin" TextChanged="TxtPrecioMin_TextChanged"
+                                 Width="100"
+                                />
+                                </StackPanel>
+
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="Precio máximo"/>
+                                    <TextBox x:Name="txtPrecioMax" TextChanged="TxtPrecioMax_TextChanged"
+                                 Width="100"
+                                 />
+                                </StackPanel>
+
+                            </StackPanel>
+
+                            <ListBox x:Name="lstProductos"
+                         FontSize="16"  SelectionChanged="LstProductos_SelectionChanged"
+                         Height="400">
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Background="#F9F9F9"
+                                    Margin="5"
+                                    Padding="10"
+                                    CornerRadius="8">
+
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="60"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Source="{Binding ImagenPath}"
+                                           Width="50"
+                                           Height="50"/>
+
+                                                <StackPanel Grid.Column="1" Margin="10,0">
+                                                    <TextBlock Text="{Binding Nombre}"
+                                                   FontWeight="Bold"/>
+                                                    <TextBlock Text="{Binding Categoria.Nombre}"
+                                                   FontSize="12"
+                                                   Foreground="Gray"/>
+                                                </StackPanel>
+
+                                                <TextBlock Text="{Binding Precio, StringFormat={}{0:C}}"
+                                               Grid.Column="2"
+                                               VerticalAlignment="Center"
+                                               FontWeight="Bold"/>
+
+                                            </Grid>
+
+                                        </Border>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+
+                            </ListBox>
+
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Dashboard">
+
+                <Grid Margin="15">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="140"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- TÍTULO -->
+                    <TextBlock Text="Dashboard de Ventas"
+                   FontSize="26"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                    <!-- TARJETAS -->
+                    <UniformGrid Grid.Row="1"
+                     Columns="4"
+                     Margin="0,0,0,20">
+
+                        <!-- TOTAL HOY -->
+                        <Border Margin="8"
+                    CornerRadius="12"
+                    Padding="15"
+                    Background="{DynamicResource PanelBrush}">
+
+                            <StackPanel>
+                                <TextBlock Text="Ventas Hoy"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="{DynamicResource TextBrush}"/>
+
+                                <TextBlock x:Name="txtVentasHoy"
+                               Text="0 €"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Margin="0,10,0,0"
+                               Foreground="{DynamicResource AccentBrush}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- PEDIDOS -->
+                        <Border Margin="8"
+                    CornerRadius="12"
+                    Padding="15"
+                    Background="{DynamicResource PanelBrush}">
+
+                            <StackPanel>
+                                <TextBlock Text="Pedidos"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="{DynamicResource TextBrush}"/>
+
+                                <TextBlock x:Name="txtPedidosHoy"
+                               Text="0"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Margin="0,10,0,0"
+                               Foreground="{DynamicResource AccentBrush}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- PRODUCTO TOP -->
+                        <Border Margin="8"
+                    CornerRadius="12"
+                    Padding="15"
+                    Background="{DynamicResource PanelBrush}">
+
+                            <StackPanel>
+                                <TextBlock Text="Producto TOP del Dia"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="{DynamicResource TextBrush}"/>
+
+                                <TextBlock x:Name="txtProductoTop"
+                               Text="-"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Margin="0,10,0,0"
+                               Foreground="{DynamicResource AccentBrush}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- TOTAL VENTAS -->
+                        <Border Margin="8"
+                    CornerRadius="12"
+                    Padding="15"
+                    Background="{DynamicResource PanelBrush}">
+
+                            <StackPanel>
+                                <TextBlock Text="Total Ventas"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="{DynamicResource TextBrush}"/>
+
+                                <TextBlock x:Name="txtTotalVentas"
+                               Text="0"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Margin="0,10,0,0"
+                               Foreground="{DynamicResource AccentBrush}"/>
+                            </StackPanel>
+                        </Border>
+
+                    </UniformGrid>
+
+                    <!-- CONTENEDOR -->
+                    <Grid Grid.Row="2"
+      Margin="0,10,0,0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <!-- TABLA -->
+                            <ColumnDefinition Width="520"/>
+
+                            <!-- ESPACIO -->
+                            <ColumnDefinition Width="15"/>
+
+                            <!-- PANEL DERECHO -->
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <!-- ========================= -->
+                        <!-- TABLA -->
+                        <!-- ========================= -->
+
+                        <Border Grid.Column="0"
+            Background="{DynamicResource PanelBrush}"
+            CornerRadius="14"
+            Padding="12">
+
+                            <DataGrid x:Name="dgUltimasVentas"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  HeadersVisibility="Column"
+                  Background="Transparent"
+                  BorderThickness="0"
+                  GridLinesVisibility="None"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="False"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  RowHeight="32"
+                  FontFamily="Segoe UI"
+                  FontSize="13"
+                  Foreground="{DynamicResource TextBrush}">
+
+                                <!-- HEADER -->
+                                <DataGrid.ColumnHeaderStyle>
+                                    <Style TargetType="DataGridColumnHeader">
+
+                                        <Setter Property="Background"
+                            Value="Transparent"/>
+
+                                        <Setter Property="Foreground"
+                            Value="{DynamicResource TextBrush}"/>
+
+                                        <Setter Property="BorderThickness"
+                            Value="0"/>
+
+                                        <Setter Property="Height"
+                            Value="30"/>
+
+                                        <Setter Property="FontSize"
+                            Value="12"/>
+
+                                        <Setter Property="FontWeight"
+                            Value="Bold"/>
+
+                                        <Setter Property="Padding"
+                            Value="8,0"/>
+
+                                        <Setter Property="Opacity"
+                            Value="0.9"/>
+
+                                    </Style>
+                                </DataGrid.ColumnHeaderStyle>
+
+                                <!-- ROWS -->
+                                <DataGrid.RowStyle>
+                                    <Style TargetType="DataGridRow">
+
+                                        <Setter Property="Background"
+                            Value="Transparent"/>
+
+                                        <Style.Triggers>
+
+                                            <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                                                <Setter Property="Background"
+                                    Value="{DynamicResource BgBrush}"/>
+
+                                            </Trigger>
+
+                                            <Trigger Property="IsSelected"
+                                 Value="True">
+
+                                                <Setter Property="Background"
+                                    Value="{DynamicResource AccentBrush}"/>
+
+                                            </Trigger>
+
+                                        </Style.Triggers>
+
+                                    </Style>
+                                </DataGrid.RowStyle>
+
+                                <!-- CELLS -->
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+
+                                        <Setter Property="BorderThickness"
+                            Value="0"/>
+
+                                        <Setter Property="Padding"
+                            Value="8,0"/>
+
+                                        <Setter Property="Foreground"
+                            Value="{DynamicResource TextBrush}"/>
+
+                                    </Style>
+                                </DataGrid.CellStyle>
+
+                                <DataGrid.Columns>
+
+                                    <DataGridTextColumn Header="Ticket"
+                                    Binding="{Binding Numero}"
+                                    Width="75"/>
+
+                                    <DataGridTextColumn Header="Fecha"
+                                    Binding="{Binding Fecha}"
+                                    Width="145"/>
+
+                                    <DataGridTextColumn Header="Usuario"
+                                    Binding="{Binding Usuario.Nombre}"
+                                    Width="170"/>
+
+                                    <DataGridTextColumn Header="Total"
+                                    Binding="{Binding Total, StringFormat={}{0:0.00} €}"
+                                    Width="90"/>
+
+                                </DataGrid.Columns>
+
+                            </DataGrid>
+
+                        </Border>
+
+
+                        <!-- ========================= -->
+                        <!-- PANEL DERECHO -->
+                        <!-- ========================= -->
+
+                        <Border Grid.Column="2"
+        Background="{DynamicResource PanelBrush}"
+        CornerRadius="14"
+        Padding="18">
+
+                            <StackPanel>
+
+                                <!-- TÍTULO -->
+                                <TextBlock Text="Resumen"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Margin="0,0,0,15"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <!-- PRODUCTO TOP -->
+                                <Border Background="{DynamicResource BgBrush}"
+                CornerRadius="10"
+                Padding="12"
+                Margin="0,0,0,15">
+
+                                    <StackPanel>
+
+                                        <TextBlock Text="Producto más vendido"
+                           FontSize="13"
+                           Opacity="0.7"
+                           Foreground="{DynamicResource TextBrush}"/>
+
+                                        <TextBlock x:Name="txtProductoTopGrande"
+                           Text="-"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Margin="0,5,0,0"
+                           Foreground="{DynamicResource AccentBrush}"/>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <!-- LISTA PRODUCTOS -->
+                                <TextBlock Text="Productos más vendidos"
+                   FontSize="16"
+                   FontWeight="SemiBold"
+                   Margin="0,0,0,10"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <ListView x:Name="lstTopProductos"
+                  Height="320"
+                  Background="Transparent"
+                  BorderThickness="0"
+                  Foreground="{DynamicResource TextBrush}">
+
+                                    <ListView.ItemContainerStyle>
+                                        <Style TargetType="ListViewItem">
+
+                                            <Setter Property="Margin" Value="0,0,0,8"/>
+                                            <Setter Property="Padding" Value="10"/>
+                                            <Setter Property="Background"
+                            Value="{DynamicResource BgBrush}"/>
+
+                                            <Setter Property="BorderThickness" Value="0"/>
+
+                                            <Setter Property="Template">
+
+                                                <Setter.Value>
+
+                                                    <ControlTemplate TargetType="ListViewItem">
+
+                                                        <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="10"
+                                        Padding="{TemplateBinding Padding}">
+
+                                                            <ContentPresenter/>
+
+                                                        </Border>
+
+                                                    </ControlTemplate>
+
+                                                </Setter.Value>
+
+                                            </Setter>
+
+                                        </Style>
+                                    </ListView.ItemContainerStyle>
+
+                                    <ListView.ItemTemplate>
+
+                                        <DataTemplate>
+
+                                            <Grid>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <!-- NOMBRE -->
+                                                <TextBlock Text="{Binding Nombre}"
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   VerticalAlignment="Center"
+                                   Foreground="{DynamicResource TextBrush}"/>
+
+                                                <!-- CANTIDAD -->
+                                                <Border Grid.Column="1"
+                                Background="{DynamicResource AccentBrush}"
+                                CornerRadius="8"
+                                Padding="8,3">
+
+                                                    <TextBlock Text="{Binding Cantidad}"
+                                       FontSize="12"
+                                       FontWeight="Bold"
+                                       Foreground="White"/>
+
+                                                </Border>
+
+                                            </Grid>
+
+                                        </DataTemplate>
+
+                                    </ListView.ItemTemplate>
+
+                                </ListView>
+
+                            </StackPanel>
+
+                        </Border>
+
+                    </Grid>
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Configuración">
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+                    <StackPanel Margin="15">
+
+                        <TextBlock Text="Configuración del sistema"
+           FontSize="24"
+           FontWeight="Bold"
+           Foreground="{DynamicResource TextBrush}"
+           Margin="0,0,0,20"/>
+
+                        <!-- ===================== -->
+                        <!-- 🎨 TEMA -->
+                        <!-- ===================== -->
+
+                        <GroupBox Header="Tema de la aplicación"
+          Margin="0,0,0,10"
+          Foreground="{DynamicResource TextBrush}">
+
+                            <StackPanel Margin="10">
+
+                                <TextBlock Text="Selecciona el tema:"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <ComboBox x:Name="cmbTema"
+                  Width="200"
+                  Margin="0,5,0,10">
+
+                                    <ComboBoxItem Content="Claro"/>
+                                    <ComboBoxItem Content="Oscuro"/>
+                                    <ComboBoxItem Content="Azul"/>
+                                    <ComboBoxItem Content="Verde"/>
+                                    <ComboBoxItem Content="Naranja"/>
+                                    <ComboBoxItem Content="Morado"/>
+
+                                </ComboBox>
+
+                                <Button Content="Aplicar tema"
+                Width="150"
+                Height="30"
+                Background="#007BFF"
+                Foreground="White"
+                Click="AplicarTema_Click"/>
+
+                            </StackPanel>
+
+                        </GroupBox>
+
+                        <!-- ===================== -->
+                        <!-- 🪟 PANTALLA PEDIDOS -->
+                        <!-- ===================== -->
+
+                        <GroupBox Header="Pantalla de pedidos"
+          Margin="0,0,0,10"
+          Foreground="{DynamicResource TextBrush}">
+
+                            <StackPanel Margin="10">
+
+                                <CheckBox x:Name="chkPantallaPedidos"
+                  Content="Mostrar ventana de pedidos"
+                  Foreground="{DynamicResource TextBrush}"
+                  IsChecked="True"
+                  Margin="0,0,0,10"/>
+
+                                <TextBlock Text="Activa o desactiva la pantalla secundaria para cocina o barra."
+                   FontSize="12"
+                   Foreground="Gray"
+                   TextWrapping="Wrap"/>
+
+                                <CheckBox x:Name="chkPantallaCompleta"
+                  Content="Modo pantalla completa"
+                  Margin="0,10,0,0"
+                  Foreground="{DynamicResource TextBrush}"/>
+
+                                <CheckBox x:Name="chkMostrarReloj"
+                  Content="Mostrar reloj"
+                  Margin="0,5,0,0"
+                  Foreground="{DynamicResource TextBrush}"/>
+
+                                <Button Content="Aplicar"
+                Width="120"
+                Margin="0,10,0,0"
+                Background="#28A745"
+                Foreground="White"
+                Click="AplicarPantallaPedidos_Click"/>
+
+                            </StackPanel>
+
+                        </GroupBox>
+
+
+
+                        <!-- ===================== -->
+                        <!-- 🔊 OPCIONES -->
+                        <!-- ===================== -->
+
+                        <GroupBox Header="Opciones generales"
+          Margin="0,0,0,10"
+          Foreground="{DynamicResource TextBrush}">
+
+                            <StackPanel Margin="10">
+
+
+
+
+
+                                <CheckBox x:Name="chkConfirmacionEliminar"
+                  Content="Confirmación al eliminar productos"
+                  Margin="0,5"
+                  Foreground="{DynamicResource TextBrush}"/>
+
+                                <CheckBox x:Name="chkImpresionAuto"
+                  Content="Impresión automática de tickets"
+                  Margin="0,5"
+                  Foreground="{DynamicResource TextBrush}"/>
+
+
+
+                            </StackPanel>
+
+                        </GroupBox>
+                        <!-- ===================== -->
+                        <!-- 🔊 VOZ -->
+                        <!-- ===================== -->
+
+                        <GroupBox Header="Configuración de voz"
+          Margin="0,0,0,10"
+          Foreground="{DynamicResource TextBrush}">
+
+                            <StackPanel Margin="10">
+
+                                <CheckBox x:Name="chkVozPedidos"
+                   Content="Anunciar pedidos por voz"
+                   Margin="0,5"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <TextBlock Text="Velocidad de la voz:"
+                   Margin="0,10,0,5"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <Slider x:Name="sliderVelocidadVoz"
+                Minimum="-10"
+                Maximum="10"
+                Value="0"
+                TickFrequency="1"
+                IsSnapToTickEnabled="True"/>
+
+                                <TextBlock Text="Volumen:"
+                   Margin="0,10,0,5"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <Slider x:Name="sliderVolumenVoz"
+                Minimum="0"
+                Maximum="100"
+                Value="100"
+                TickFrequency="10"
+                IsSnapToTickEnabled="True"/>
+
+                                <TextBlock Text="Voz del sistema:"
+                   Margin="0,10,0,5"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+                                <ComboBox x:Name="cmbVoces"
+                  Width="250"
+                  Margin="0,5,0,10"/>
+
+                                <Button Content="Probar voz"
+                Width="120"
+                Height="30"
+                Background="#007BFF"
+                Foreground="White"
+                Click="ProbarVoz_Click"
+                                        
+                                        />
+
+                            </StackPanel>
+
+                        </GroupBox>
+                        <!-- ===================== -->
+                        <!-- 💾 BASE DE DATOS -->
+                        <!-- ===================== -->
+
+                        <GroupBox Header="Base de datos"
+          Foreground="{DynamicResource TextBrush}">
+
+                            <StackPanel Margin="10">
+
+                                <Button Content="Crear copia de seguridad" Click="CrearBackup_Click"
+                Width="220"
+                Height="35"
+                Background="#17A2B8"
+                Foreground="White"
+                Margin="0,0,0,10"/>
+
+                                <Button Content="Restaurar copia de seguridad" Click="RestaurarBackup_Click"
+                Width="220"
+                Height="35"
+                Background="#6C757D"
+                Foreground="White"/>
+
+                            </StackPanel>
+
+                        </GroupBox>
+                        <!-- ===================== -->
+                        <!-- 💾 GUARDAR CONFIGURACIÓN -->
+                        <!-- ===================== -->
+
+                        <GroupBox Header="Guardar configuración"
+          Margin="0,10,0,0"
+          Foreground="{DynamicResource TextBrush}">
+
+                            <StackPanel Margin="10">
+
+                                <TextBlock Text="Guarda todos los cambios realizados en la configuración del sistema."
+                   FontSize="12"
+                   Opacity="0.7"
+                   TextWrapping="Wrap"
+                   Margin="0,0,0,10"/>
+
+                                <Button Content="Guardar configuración"
+                Width="220"
+                Height="35"
+                Background="#28A745"
+                Foreground="White"
+                Click="GuardarConfiguracionApp_Click"/>
+
+                            </StackPanel>
+
+                        </GroupBox>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </TabItem>
+            <!-- ===================================================== -->
+            <!-- TAB DASHBOARD -->
+            <!-- ===================================================== -->
+
+
+
+        </TabControl>
+
+    </Grid>
+</Window>

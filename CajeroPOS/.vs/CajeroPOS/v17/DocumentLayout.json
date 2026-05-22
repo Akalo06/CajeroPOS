@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|c:\\users\\corre\\onedrive\\escritorio\\2 dam\\proyectos\\cajeropos\\cajeropos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|solutionrelative:cajeropos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|c:\\users\\corre\\onedrive\\escritorio\\2 dam\\proyectos\\cajeropos\\cajeropos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|solutionrelative:cajeropos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|c:\\users\\corre\\onedrive\\escritorio\\2 dam\\proyectos\\cajeropos\\cajeropos\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|solutionrelative:cajeropos\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|c:\\users\\corre\\onedrive\\escritorio\\2 dam\\proyectos\\cajeropos\\cajeropos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D89643C6-5DC9-43DA-8A91-7507C35A087E}|CajeroPOS\\CajeroPOS.csproj|solutionrelative:cajeropos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 333,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a5174402-226b-48da-aa5c-91376ed45871}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\App.config",
+              "RelativeDocumentMoniker": "CajeroPOS\\App.config",
+              "ToolTip": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\App.config",
+              "RelativeToolTip": "CajeroPOS\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-22T08:34:48.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CajeroPOS\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\MainWindow.xaml",
+              "RelativeToolTip": "CajeroPOS\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-19T09:13:42.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "CajeroPOS\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\LoginWindow.xaml",
+              "RelativeToolTip": "CajeroPOS\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T15:42:29.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CajeroPOS\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\corre\\OneDrive\\Escritorio\\2 DAM\\proyectos\\CajeroPOS\\CajeroPOS\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CajeroPOS\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAGEBAAAAAAAAAAAjwJ8BAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T14:13:49.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 42,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
