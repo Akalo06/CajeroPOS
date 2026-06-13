@@ -37,5 +37,13 @@ namespace CajeroPOS.Models
 
 
         }
+
+        public decimal PrecioTotal
+        {
+            get
+            {
+                return Precio * Cantidad;
+            }
+        }
     }
 }

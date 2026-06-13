@@ -63,27 +63,40 @@ namespace CajeroPOS
 
             // ================= CARGA BD =================
 
-            using (var db = new AppDbContext())
+            try
             {
-                usuarios = db.Usuarios.ToList();
-                productos = db.Productos.Include(x => x.Categoria).ToList();
-                categorias = db.Categorias.ToList();
 
 
 
-                // CREAR CATEGORÍA "TODAS" SI NO EXISTEN CATEGORÍAS
-                if (!categorias.Any())
+
+                using (var db = new AppDbContext())
                 {
-                    Categoria categoriaTodas = new Categoria
-                    {
-                        Nombre = "Todas"
-                    };
 
-                    db.Categorias.Add(categoriaTodas);
-                    db.SaveChanges();
-
+                    db.Database.CanConnect();
+                    usuarios = db.Usuarios.ToList();
+                    productos = db.Productos.Include(x => x.Categoria).ToList();
                     categorias = db.Categorias.ToList();
+
+
+
+                    // CREAR CATEGORÍA "TODAS" SI NO EXISTEN CATEGORÍAS
+                    if (!categorias.Any())
+                    {
+                        Categoria categoriaTodas = new Categoria
+                        {
+                            Nombre = "Todas"
+                        };
+
+                        db.Categorias.Add(categoriaTodas);
+                        db.SaveChanges();
+
+                        categorias = db.Categorias.ToList();
+                    }
+
                 }
+            }
+            catch {
+                MessageBox.Show("No se puede conectar a MariaDB. Verifique la instalación. Recuerda añadir tus datos de MariaDB en el archivo App.config del proyecto"); Application.Current.Shutdown();
 
             }
             CargarConfiguracionApp();
@@ -121,6 +134,9 @@ namespace CajeroPOS
             CargarConfiguracionTicket();
 
         }
+
+
+
 
         // =====================================================
         // RELOJ
@@ -404,10 +420,6 @@ namespace CajeroPOS
                 Padding = new Thickness(14, 6, 14, 6),
                 DataContext = nombre,
 
-                Background = (Brush)Application.Current.Resources["PanelBrush"],
-                Foreground = (Brush)Application.Current.Resources["TextBrush"],
-                BorderBrush = (Brush)Application.Current.Resources["AccentBrush"],
-
                 BorderThickness = new Thickness(1),
                 FontSize = 13,
                 FontWeight = FontWeights.SemiBold,
@@ -416,6 +428,11 @@ namespace CajeroPOS
 
                 Template = (ControlTemplate)Application.Current.Resources["CategoriaButtonTemplate"]
             };
+
+            // recursos dinámicos al cambiar de tema
+            btn.SetResourceReference(Button.BackgroundProperty, "PanelBrush");
+            btn.SetResourceReference(Button.ForegroundProperty, "TextBrush");
+            btn.SetResourceReference(Button.BorderBrushProperty, "AccentBrush");
 
             btn.Click += Categoria_Click;
 
@@ -1039,7 +1056,24 @@ namespace CajeroPOS
             // ----------------------------
             MostrarTicketTermico(factura);
 
-            MessageBox.Show($"Pedido {numero} confirmado 🧾");
+            MessageBox.Show(
+    $"Pedido {numero} registrado correctamente.\n\n" +
+    "El ticket se ha generado y está listo para impresión.",
+    "Confirmación de venta",
+    MessageBoxButton.OK,
+    MessageBoxImage.Information
+);
+
+            if (configApp.ImpresionAuto)
+            {
+                Task.Delay(200).ContinueWith(_ =>
+                {
+                    Dispatcher.Invoke(() =>
+                    {
+                        ImprimirTicketTermico(factura);
+                    });
+                });
+            }
 
 
             // ----------------------------
@@ -1051,10 +1085,7 @@ namespace CajeroPOS
 
             ActualizarPantallas();
 
-            if (configApp.ImpresionAuto)
-            {
-                ImprimirTicketTermico(null, null);
-            }
+
 
         }
 
@@ -1435,14 +1466,14 @@ namespace CajeroPOS
             GuardarConfiguracionTicket();
         }
 
-        private async void ImprimirTicketTermico(object sender, RoutedEventArgs e)
+        private async void ImprimirTicketTermico(Factura factura)
         {
             ticketTermico.Visibility = Visibility.Visible;
 
             // =========================
-            // CARGAR PRODUCTOS
+            // CARGAR PRODUCTOS DESDE FACTURA
             // =========================
-            var lista = facturaActual.Productos
+            var lista = factura.Productos
                 .Select(p => new
                 {
                     p.Nombre,
@@ -1460,7 +1491,6 @@ namespace CajeroPOS
             tkProductos.ApplyTemplate();
             tkProductos.UpdateLayout();
 
-
             ticketTermico.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
 
             ticketTermico.Arrange(new Rect(
@@ -1471,11 +1501,16 @@ namespace CajeroPOS
 
             ticketTermico.UpdateLayout();
 
+            // Pequeña espera para asegurar render final WPF
+            await Task.Delay(100);
+            await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.Render);
+            await Task.Delay(300);
+
             // =========================
             // IMPRIMIR
             // =========================
             PrintDialog pd = new PrintDialog();
-            string nombreTicket = $"Ticket_{facturaActual.Numero}_{DateTime.Now:dd-MM-yyyy_HH-mm}";
+            string nombreTicket = $"Ticket_{factura.Numero}_{DateTime.Now:dd-MM-yyyy_HH-mm}";
 
             if (pd.ShowDialog() == true)
             {
@@ -1669,13 +1704,17 @@ namespace CajeroPOS
 
             if (chkPantallaCompleta.IsChecked == true)
             {
-                WindowState = WindowState.Maximized;
-                WindowStyle = WindowStyle.None;
+                pantallaPedidos.WindowState = WindowState.Maximized;
+                pantallaPedidos.WindowStyle = WindowStyle.None;
             }
             else
             {
-                WindowState = WindowState.Normal;
-                WindowStyle = WindowStyle.SingleBorderWindow;
+                if (pantallaPedidos == null)
+                {
+                    return;
+                }
+                pantallaPedidos.WindowState = WindowState.Normal;
+                pantallaPedidos.WindowStyle = WindowStyle.SingleBorderWindow;
             }
 
 

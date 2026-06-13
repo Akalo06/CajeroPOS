@@ -10,14 +10,69 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<None Remove="App.config" />
+		<None Remove="config_app.json" />
+		<None Remove="config_ticket.json" />
 		<None Remove="frente-de-la-tienda.ico" />
+		<None Remove="imagenes\1.png" />
+		<None Remove="imagenes\2.png" />
+		<None Remove="imagenes\3.png" />
+		<None Remove="imagenes\4.png" />
+		<None Remove="imagenes\5.png" />
+		<None Remove="imagenes\6.png" />
+		<None Remove="imagenes\7.png" />
+		<None Remove="imagenes\8.png" />
 		<None Remove="imagenes\bebida.png" />
 		<None Remove="imagenes\burguer.jpg" />
+		<None Remove="imagenes\helado.jpg" />
+		<None Remove="imagenes\nuggets-de-pollo_454x.jpg" />
 		<None Remove="imagenes\patatas.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="bin\Debug\net8.0-windows\frente-de-la-tienda.ico" />
+		<Content Include="App.config">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="bin\Debug\net8.0-windows\frente-de-la-tienda.ico" />
+		<Content Include="config_app.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="config_ticket.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="imagenes\1.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\2.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\3.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\4.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\5.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\6.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\7.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\8.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\helado.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="imagenes\nuggets-de-pollo_454x.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -36,17 +91,17 @@
 
 	<ItemGroup>
 		<Resource Include="frente-de-la-tienda.ico">
-		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Resource>
-		<Resource Include="imagenes\bebida.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Resource>
-		<Resource Include="imagenes\burguer.jpg">
+		<Content Include="imagenes\bebida.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Resource>
-		<Resource Include="imagenes\patatas.jpg">
+		</Content>
+		<Content Include="imagenes\burguer.jpg">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Resource>
+		</Content>
+		<Content Include="imagenes\patatas.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -54,15 +109,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="App.config">
+	  <ApplicationDefinition Update="App.xaml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="mysql.exe">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="mysqldump.exe">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
+	  </ApplicationDefinition>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="mysql.exe">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="mysqldump.exe">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 </Project>
